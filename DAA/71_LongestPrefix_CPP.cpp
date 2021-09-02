@@ -57,3 +57,28 @@ int main(){
     cout << "Longest common prefix : " << longestCommonPrefix(arr, len);
 
 }
+
+// OUTPUT 
+
+// PS C:\Users\princ\Documents\GitHub\Sem-5\DAA> cd "c:\Users\princ\Documents\GitHub\Sem-5\DAA\" ; if ($?) { g++ 71_LongestPrefix_CPP.cpp -o 71_LongestPrefix_CPP } ; if ($?) { .\71_LongestPrefix_CPP }
+// Enter length of array   : 3
+// Enter elements of array : apple ape april
+
+// Input Array           : apple ape april 
+// Longest common prefix : ap
+
+
+// PS C:\Users\princ\Documents\GitHub\Sem-5\DAA> cd "c:\Users\princ\Documents\GitHub\Sem-5\DAA\" ; if ($?) { g++ 71_LongestPrefix_CPP.cpp -o 71_LongestPrefix_CPP } ; if ($?) { .\71_LongestPrefix_CPP }
+// Enter length of array   : 4    
+// Enter elements of array : flower fly flight flow
+
+// Input Array           : flower fly flight flow 
+// Longest common prefix : fl
+
+
+// PS C:\Users\princ\Documents\GitHub\Sem-5\DAA> cd "c:\Users\princ\Documents\GitHub\Sem-5\DAA\" ; if ($?) { g++ 71_LongestPrefix_CPP.cpp -o 71_LongestPrefix_CPP } ; if ($?) { .\71_LongestPrefix_CPP }
+// Enter length of array   : 3
+// Enter elements of array : after academy mindorks  
+
+// Input Array           : after academy mindorks 
+// Longest common prefix : -1

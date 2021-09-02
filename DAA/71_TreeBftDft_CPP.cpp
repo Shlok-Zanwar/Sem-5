@@ -158,3 +158,11 @@ int main(){
     t.dft();
 }
 
+// OUTPUT
+
+// PS C:\Users\princ\Documents\GitHub\Sem-5\DAA> cd "c:\Users\princ\Documents\GitHub\Sem-5\DAA\" ; if ($?) { g++ 71_TreeBftDft_CPP.cpp -o 71_TreeBftDft_CPP } ; if ($?) { .\71_TreeBftDft_CPP }
+// Inorder traversal        : 10 15 20 25 30
+// Search 25                : 25 present in the tree.
+// Search 24                : 24 not present in the tree.
+// Breath first traversal   : 20 15 25 10 30
+// Depth first traversal    : 20 25 30 15 10
