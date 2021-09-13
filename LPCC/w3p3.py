@@ -21,14 +21,22 @@ def handleOrigin(symbolTable, addToSymbol, addNum):
         if(symbol['symbol'] == addToSymbol):
             return symbol['address'] + addNum
 
-def handleEqu(symbolTable, newSymbol, eqToSymbol):
+def handleEqu(symbolTable, leftSymbol, rightSymbol):
+    address = 0
     for symbol in symbolTable:
-        if(symbol['symbol'] == eqToSymbol):
-            symbolTable.append({
-                "symbol": newSymbol,
-                "address": symbol['address'],
-            })
+        if(symbol['symbol'] == rightSymbol):
+            address = symbol['address'],
+            # symbolTable.append({
+            #     "symbol": newSymbol,
+            #     "address": symbol['address'],
+            # })
             return symbolTable
+
+    index = 0
+    for symbol in symbolTable:
+        index += 1
+        if(symbol['symbol'] == rightSymbol):
+
 
 file = open("EmotJSON.json", "r+")
 emotJson = json.loads(file.read())
@@ -87,6 +95,11 @@ for line in lines:
             "literal": line[-1],
             "newLiteral": int(line[-1][2:-1]),
             "address": None
+        })
+    elif line[-1] not in emotJson:
+        symbolTable.append({
+            "symbol": line[-1],
+            "address": None,
         })
 
     # print(line, lc)

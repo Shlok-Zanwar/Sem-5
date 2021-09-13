@@ -1,29 +1,137 @@
 {
-  "STOP": 0,
-  "ADD": 1,
-  "SUB": 2,
-  "MULT": 3,
-  "MOVER": 4,
-  "MOVEM": 5,
-  "COMP": 6,
-  "BC": 7,
-  "DIV": 8,
-  "READ": 9,
-  "PRINT": 10,
-  "START": 11,
-  "END": 12,
-  "ORIGIIN": 13,
-  "EQU": 14,
-  "LTORG": 15,
-  "DS": 16,
-  "DC": 17,
-  "AREG": 18,
-  "BREG": 19,
-  "CREG": 20,
-  "EQ": 21,
-  "LT": 22,
-  "GT": 26,
-  "NE": 24,
-  "LE": 25,
-  "ANY": 27
+  "STOP": {
+    "mnemonic": "STOP",
+    "class": "1",
+    "opcode": "00"
+  },
+  "ADD": {
+    "mnemonic": "ADD",
+    "class": "1",
+    "opcode": "01"
+  },
+  "SUB": {
+    "mnemonic": "SUB",
+    "class": "1",
+    "opcode": "02"
+  },
+  "MULT": {
+    "mnemonic": "MULT",
+    "class": "1",
+    "opcode": "03"
+  },
+  "MOVER": {
+    "mnemonic": "MOVER",
+    "class": "1",
+    "opcode": "04"
+  },
+  "MOVEM": {
+    "mnemonic": "MOVEM",
+    "class": "1",
+    "opcode": "05"
+  },
+  "COMP": {
+    "mnemonic": "COMP",
+    "class": "1",
+    "opcode": "06"
+  },
+  "BC": {
+    "mnemonic": "BC",
+    "class": "1",
+    "opcode": "07"
+  },
+  "DIV": {
+    "mnemonic": "DIV",
+    "class": "1",
+    "opcode": "08"
+  },
+  "READ": {
+    "mnemonic": "READ",
+    "class": "1",
+    "opcode": "09"
+  },
+  "PRINT": {
+    "mnemonic": "PRINT",
+    "class": "1",
+    "opcode": "10"
+  },
+  "START": {
+    "mnemonic": "START",
+    "class": "3",
+    "opcode": "01"
+  },
+  "END": {
+    "mnemonic": "END",
+    "class": "3",
+    "opcode": "02"
+  },
+  "ORIGIN": {
+    "mnemonic": "ORIGIN",
+    "class": "3",
+    "opcode": "03"
+  },
+  "EQU": {
+    "mnemonic": "EQU",
+    "class": "3",
+    "opcode": "04"
+  },
+  "LTORG": {
+    "mnemonic": "LTORG",
+    "class": "3",
+    "opcode": "05"
+  },
+  "DS": {
+    "mnemonic": "DS",
+    "class": "2",
+    "opcode": "01"
+  },
+  "DC": {
+    "mnemonic": "DC",
+    "class": "2",
+    "opcode": "02"
+  },
+  "AREG": {
+    "mnemonic": "AREG",
+    "class": "4",
+    "opcode": "01"
+  },
+  "BREG": {
+    "mnemonic": "BREG",
+    "class": "4",
+    "opcode": "02"
+  },
+  "CREG": {
+    "mnemonic": "CREG",
+    "class": "4",
+    "opcode": "03"
+  },
+  "EQ": {
+    "mnemonic": "EQ",
+    "class": "5",
+    "opcode": "01"
+  },
+  "LT": {
+    "mnemonic": "LT",
+    "class": "5",
+    "opcode": "02"
+  },
+  "GT": {
+    "mnemonic": "GT",
+    "class": "5",
+    "opcode": "06"
+  },
+  "NE": {
+    "mnemonic": "NE",
+    "class": "5",
+    "opcode": "04"
+  },
+  "LE": {
+    "mnemonic": "LE",
+    "class": "5",
+    "opcode": "05"
+  },
+  "ANY": {
+    "mnemonic": "ANY",
+    "class": "5",
+    "opcode": "07"
+  }
 }

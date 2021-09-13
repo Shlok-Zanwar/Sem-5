@@ -1,13 +1,24 @@
         START       200
-        MOVER       AREG,='50'
-        MOVEM       AREG,X
-L1      MOVER       BREG,='3'
+        MOVER       AREG,='50'      201
+        MOVEM       AREG,X           202
+L1      MOVER       BREG,='3'       203
         LTORG
-NEXT    ADD         AREG,='1'
-        SUB         BREG,='2'
-        BC          LT, BACK
+NEXT    ADD         AREG,='1'       206
+        SUB         BREG,='2'       207
+        BC          LT, NEXT       208
         LTORG
-        MULT        CREG, X
+        MULT        CREG, X         211
         STOP
-X       DS          1
-        END
+X       DS          1              212
+        END                             
+
+
+X           212
+L1          203
+NEXT        206
+
+
+50          204
+3           205
+1           209
+2           210
