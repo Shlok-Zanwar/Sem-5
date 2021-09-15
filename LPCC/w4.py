@@ -100,11 +100,12 @@ for line in lines:
                 break
 
             if word == "STOP":
-                incrementLC = False
+                # incrementLC = False
                 break
 
             if word == "END":
                 literalTable, lc, poolTable = giveLCToLiterals(literalTable, lc, poolTable)
+                incrementLC = False
                 break
 
             if word == "ORIGIN":
@@ -174,6 +175,14 @@ headers = {"literal": "Literal", "address": "Address"}
 print("\nLiteral Table :- \n", tabulate(literalTable, headers=headers, tablefmt="pretty"))
 
 print("\nPool Table :- ", poolTable)
+
+outputFile.close()
+outputFile = open("Output.txt", "r+")
+
+print("\nOutput File :-")
+outputLines = outputFile.readlines()
+for line in outputLines:
+    print(line, end="")
 
 #         START   200
 #         MOVER   AREG,='50'
