@@ -18,7 +18,7 @@ emotArray = json.loads(file.read())
 
 # print("yes" if "STdOP" in emotJson else "no")
 
-file = open('input2.txt', 'r')
+file = open('Input2.txt', 'r')
 fileLines = file.readlines()
 
 lines = []

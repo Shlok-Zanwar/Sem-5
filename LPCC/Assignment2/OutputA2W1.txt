@@ -1,0 +1,36 @@
+
+IC :-
+-------------------------------------------
+START 200
+READ N1
+READ N2
+ADDS
+SUBS
+N1 DS 2
+N2 DS 2
+N3 DS 2
+N4 DS 2
+END
+
+
+MDT :-
+-------------------------------------------
+Index		Line
+-------------------------------------------
+0		MOVER AREG ='1'
+1		ADD AREG ='2'
+2		MOVEM AREG X
+3		MEND
+4		MOVER BREG X
+5		SUB BREG Y
+6		MOVEM BREG X
+7		WRITE Y
+8		MEND
+
+
+MNT :-
+-------------------------------------------
+Name		Pointer
+-------------------------------------------
+ADDS		0
+SUBS		4

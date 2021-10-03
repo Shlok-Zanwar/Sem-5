@@ -24,18 +24,22 @@ def handleOrigin(symbolTable, addToSymbol, addNum):
 def handleEqu(symbolTable, leftSymbol, rightSymbol):
     address = 0
     for symbol in symbolTable:
-        if(symbol['symbol'] == rightSymbol):
-            address = symbol['address'],
-            # symbolTable.append({
-            #     "symbol": newSymbol,
-            #     "address": symbol['address'],
-            # })
-            return symbolTable
-
+        if (symbol['symbol'] == rightSymbol):
+            address = symbol['address']
     index = 0
     for symbol in symbolTable:
+        if (symbol['symbol'] == leftSymbol):
+            symbol['address'] = address
+            break
         index += 1
-        if(symbol['symbol'] == rightSymbol):
+
+    if index == len(symbolTable):
+        symbolTable.append({
+            "symbol": leftSymbol,
+            "address": address,
+        })
+
+    return symbolTable
 
 
 file = open("EmotJSON.json", "r+")
